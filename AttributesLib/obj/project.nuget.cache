@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GSXri43Q76+0gbSqfqw3PFdtH+yPFQK3nRZnW3xKnuUrgJBJAW5lLRBITUVOiobxcFCAKiBuGh6EMk09sTd+xg==",
+  "dgSpecHash": "F9srF3Qt5HFP1OTlYGZDegorqohdP+oif8HXKhSqL2pkPGb2zZXcblh9TAXE3ngm0aVrjN3akBtgaIMbzMzs3g==",
   "success": true,
   "projectFilePath": "E:\\Development\\AttributesDemo\\AttributesLib\\AttributesLib.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\jorda\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\jorda\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
