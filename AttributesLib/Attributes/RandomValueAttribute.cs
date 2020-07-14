@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace AttributesLib.Attributes {
-    public class RandomValueAttribute : Attribute {
+    public class RandomValueAttribute : PropertySetterAttribute {
         public object[] Values { get; }
 
         public RandomValueAttribute(params object[] values) {

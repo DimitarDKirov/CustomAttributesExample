@@ -2,9 +2,9 @@
 using AttributesLib.Attributes;
 
 namespace AttributesLib.Model {
-    public class Employee {
-        public int ID { get; }
-        
+    public class Employee : IEntity {
+        public int ID { get; set; }
+
         [RandomValue(2, 3, 5, 12)]
         public int RandomNumber { get; internal set; }
         
@@ -23,13 +23,8 @@ namespace AttributesLib.Model {
         [GetFromMethod(nameof(Employee.GenerateEmployeeString))]
         public string EmployeeString { get; internal set; }
 
-        internal Employee(int id) {
-            ID = id;
-        }
-
         public string GenerateEmployeeString() {
             return $"{ID}, {RandomNumber}, {RandomString}, {State}, {BlogPosts.Count} Posts";
         }
-        
     }
 }

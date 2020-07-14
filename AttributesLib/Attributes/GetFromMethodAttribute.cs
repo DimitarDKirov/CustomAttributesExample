@@ -1,7 +1,5 @@
-﻿using System;
-
-namespace AttributesLib.Attributes {
-    public class GetFromMethodAttribute : Attribute {
+﻿namespace AttributesLib.Attributes {
+    public class GetFromMethodAttribute : PropertySetterAttribute {
         public string Method { get; }
 
         public GetFromMethodAttribute(string method) {

@@ -8,7 +8,7 @@ namespace AttributesLib.Tests {
         [Test]
         public async Task CreateEmployee_ReturnsNewEmployee() {
             var employeeFactory = new EmployeeFactory();
-            var employee = await employeeFactory.CreateEmployee(1);
+            var employee = await employeeFactory.Create(1);
             
             Assert.NotNull(employee);
         }
@@ -16,7 +16,7 @@ namespace AttributesLib.Tests {
         [Test]
         public async Task CreateEmployee_ReturnsNewEmployee_WithBlogPosts() {
             var employeeFactory = new EmployeeFactory();
-            var employee = await employeeFactory.CreateEmployee(1);
+            var employee = await employeeFactory.Create(1);
             
             Assert.NotNull(employee.BlogPosts);
             Assert.Greater(employee.BlogPosts.Count, 80);
@@ -25,7 +25,7 @@ namespace AttributesLib.Tests {
         [Test]
         public async Task CreateEmployee_ReturnsNewEmployee_WithStateCity() {
             var employeeFactory = new EmployeeFactory();
-            var employee = await employeeFactory.CreateEmployee(1);
+            var employee = await employeeFactory.Create(1);
             
             Assert.NotNull(employee.State);
             Assert.AreEqual(employee.State, "PA");
@@ -35,7 +35,7 @@ namespace AttributesLib.Tests {
         [Test]
         public async Task CreateEmployee_ReturnsNewEmployee_WithRandomValues() {
             var employeeFactory = new EmployeeFactory();
-            var employee = await employeeFactory.CreateEmployee(1);
+            var employee = await employeeFactory.Create(1);
 
             var numbers = new[] {2, 3, 5, 12};
             var strings = new[] {"Hello", "World", "Ninja"};
@@ -47,7 +47,7 @@ namespace AttributesLib.Tests {
         [Test]
         public async Task CreateEmployee_ReturnsNewEmployee_WithCalculatedVariable() {
             var employeeFactory = new EmployeeFactory();
-            var employee = await employeeFactory.CreateEmployee(1);
+            var employee = await employeeFactory.Create(1);
 
             Assert.AreEqual(employee.GenerateEmployeeString(), employee.EmployeeString);
         }

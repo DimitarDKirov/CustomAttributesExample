@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace AttributesLib.Attributes {
-    public class GetFromRestAPIAttribute : Attribute {
+    public class GetFromRestAPIAttribute : PropertySetterAttribute {
         public string Url { get; }
         public string Collection { get; }
         public int ID { get; }
